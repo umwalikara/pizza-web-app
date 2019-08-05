@@ -64,4 +64,11 @@ pizzaOrder.prototype.finalCost = function () {
           $("#pizzaDetails").append("<p>" + pizzaDetails + "</p>");
           $("#size,.cru, .topp").val("");
         });
+        var talalAmount = new Order();
+ $("button#checkout").click(function(event) {
+   event.preventDefault();
+   talalAmount.tatolCharge();
+   PizzatotalPrice.push(talalAmount.deliveryCharge);
+   $("#check").text(talalAmount.finalCost());
+ });
     })
