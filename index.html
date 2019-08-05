@@ -46,6 +46,10 @@
                                     <option>Large</option>
                                   </select>
                                 </div>
+                                <div class="form-group card col-sm-6">
+                                  <label for="pwd">Choose Quantity:</label>
+                                  <input type="number" class="form-control" min="1" id="qnty" name="Quantity">
+                                </div>
                         <fieldset class="form-group card col-sm-6">
                           <div class="row">
                             <legend class="col-form-label col-sm-2">Choose Crust:</legend>
@@ -65,7 +69,7 @@
                             </div>
                           </div>
                         </fieldset>
-                        <div class="form-group card col-sm-12">
+                        <div class="form-group card col-sm-6">
                                 <div class="row">
                                   <legend class="col-form-label col-sm-2">Choose Topping:</legend>
                                   <div class="col-sm-6">
@@ -103,8 +107,8 @@
                     </div>
                         
                         <div class="form-group row">
-                          <div class="col-sm-10">
-                            <button type="submit" class="btn btn-primary">Sign in</button>
+                          <div class=" btn col-sm-12">
+                            <button type="submit" id="btn" class="btn btn-secondary">Order</button>
                           </div>
                         </div> 
                       </form>
