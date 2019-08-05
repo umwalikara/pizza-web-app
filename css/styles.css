@@ -21,13 +21,21 @@ p{
     font-weight: bold;
     font-style: oblique;
 }
+.prices{
+    background-color: rgb(105, 102, 96);
+    color: rgb(189, 180, 154);
+}
+.values{
+    /* background: teal; */
+    padding-top: 400px;
+}
 .order{
     background-color: rgb(38, 43, 35);
     color: rgb(131, 120, 85);
 }
 .form-control{
     background: transparent;
-    color: rgb(177, 174, 174);
+    color: rgb(117, 105, 67);;
     /* border-radius: 0px; */
     border-color:  rgb(117, 105, 67);
 }
@@ -41,8 +49,9 @@ h4{
 .card{
     background: transparent;
 }
-#btn{
+.deliva{
     background: rgb(90, 68, 40);
+    color: #fff;
 }
 footer{
     background: rgb(51, 59, 65);
