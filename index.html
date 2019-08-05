@@ -67,7 +67,7 @@
       <div class="form-row">
         <div class="form-group card col-sm-6">
           <label for="inputState">Choose Size:</label>
-          <select id="inputState" class="form-control">
+          <select id="size" class="form-control">
             <option selected>Choose...</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
@@ -83,15 +83,15 @@
             <legend class="col-form-label col-sm-2">Choose Crust:</legend>
               <div class="col-sm-6">
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+                  <input class="form-check-input cru" type="radio" name="gridRadios" id="Radios1" value="option1">
                    <label class="form-check-label" for="gridRadios1">Crispy</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                  <input class="form-check-input cru" type="radio" name="gridRadios" id="Radios2" value="option2">
                   <label class="form-check-label" for="gridRadios2">Stuffed</label>
                 </div>
                 <div class="form-check ">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                  <input class="form-check-input cru" type="radio" name="gridRadios" id="Radios3" value="option3">
                   <label class="form-check-label" for="gridRadios3"> Gliten-Free</label>
                 </div>
               </div>
@@ -102,15 +102,15 @@
             <legend class="col-form-label col-sm-2">Choose Topping:</legend>
             <div class="col-sm-6">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck1" value="top1" >
+                <input class="form-check-input topp" type="checkbox" id="Check1" value="top1" >
                 <label class="form-check-label" for="gridCheck1">Pepperoni, Mushrooms,Green Peppers and Onion</label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck2" value="top2" >
+                <input class="form-check-input topp" type="checkbox" id="Check2" value="top2" >
                 <label class="form-check-label" for="gridCheck1">Extra Cheese, Sausage,Black Olives and Onions</label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck3" value="top3" >
+                <input class="form-check-input topp" type="checkbox" id="Check3" value="top3" >
                 <label class="form-check-label" for="gridCheck1">Mushrooms,Onions, Green Peppers and Black Olives</label>
               </div>
             </div>
@@ -121,9 +121,13 @@
     <div class="form-group row">
       <div class=" btn col-sm-6">
         <button type="submit" id="check" onclick="order()" class="btn btn-secondary deliva">checkout</button>
+        <p id="price"></p>
+        <p id="pizzaDetails">view order:</p>
       </div>
       <div class=" btn col-sm-6">
         <button type="submit" id="btn" onclick="order()" class="btn btn-secondary deliva">Order</button>
+        <p id="pizzaDetail"></p>
+        
       </div>
     </div> 
   </div>
