@@ -64,7 +64,7 @@ pizzaOrder.prototype.finalCost = function () {
           $("#pizzaDetails").append("<p>" + pizzaDetails + "</p>");
           $("#size,.cru, .topp").val("");
         });
-        var talalAmount = new Order();
+        var talalAmount = new pizzaOrder();
  $("button#checkout").click(function(event) {
    event.preventDefault();
    talalAmount.tatolCharge();
