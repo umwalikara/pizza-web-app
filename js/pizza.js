@@ -44,30 +44,24 @@ pizzaOrder.prototype.finalCost = function () {
     }
     return TotalPrice;
     }
-    // pizzaOrder.prototype.tatolCharge = function(){
-    //    var checkout =0;
-    //    checkout+=PizzatotalPrice[i];
-    //    return checkout;
-    // }
+
     pizzaOrder.prototype.tatolCharge = function(){
        return this.deliveryCharge;
     }
-
     $(document).ready(function() {
-        $("form").submit(function(event) {
+        $("#btn").click(function(event) {
             event.preventDefault();
           var pizzaSize = $("select#size").val();
+          console.log(pizzaSize);
           var pizzaCrust = $("input.cru").val();
           var pizzaTopping = $("input.topp").val();
-        
-        //    var pizzaNumbers = $("input#pizza-number").val();
           var pizzaDetails = (pizzaSize + ": " + pizzaCrust + ", " + pizzaTopping);
-          var newPizzaOrder = new Order(pizzaSize, pizzaCrust,pizzaTopping);
+          var newPizzaOrder = new pizzaOrder(pizzaSize, pizzaCrust,pizzaTopping);
           newPizzaOrder.pizzaPizza();
           PizzatotalPrice.push(newPizzaOrder.pizzaPrice);
           $("#pizzaDetails").show();
           $("#price").text(newPizzaOrder.finalCost());
-          $("#pizzaDetail").append("<p>" + pizzaDetails + "</p>");
+          $("#pizzaDetails").append("<p>" + pizzaDetails + "</p>");
           $("#size,.cru, .topp").val("");
         });
     })
