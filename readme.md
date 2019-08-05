@@ -6,10 +6,6 @@ this application will help the users to order the pizza and to choose the size, 
 Also to checkout what you have entered.
 ## Setup/Installation Requirements
 * no installation
-##Behavior Driven Development
-*Input:-enter the details, 
-       -then after click on order button and checkout button...
-*Output: after you order and checkout, it displays the toast message of your details.
 ## Technologies Used
 this is a web application designed using bootstrap, css and JavaScript.
 ## Support and contact details
